@@ -18,5 +18,5 @@ The Resiliency AVC is
 
 
 # Pipkin
-Delegate Address: 0x45C52826EFA13A6DE713528BF42B520C9fA50081
+Delegate Address: 0xDEc6c50905182cfed4540090EAd9e2aA2FaA3cA7  
 Forum: @Pipkin

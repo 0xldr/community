@@ -27,5 +27,5 @@ As an organization committed to the principles of decentralization, autonomy, an
 Regarding the dovish v hawkish dilemma, we prefer to go with a balanced strategy for MakerDAO that would aim to maintain stability while also promoting growth and innovation. By finding the right balance between these two objectives, MakerDAO could build a sustainable and successful platform that attracts new users and drives innovation in the decentralized finance space.
 
 # Pipkin
-Delegate Address: 0x0E661eFE390aE39f90a58b04CF891044e56DEDB7
-Forum: https://forum.makerdao.com/t/pipkin-ad-recognition/23448
+Delegate Address: 0x0E661eFE390aE39f90a58b04CF891044e56DEDB7  
+Forum: @Pipkin

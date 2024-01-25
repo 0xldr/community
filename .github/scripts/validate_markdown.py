@@ -32,9 +32,9 @@ def validate_markdown(file_path):
             errors.append('missing date')
         if 'address' not in metadata:
             errors.append('missing mainnet address')
-        elif not Web3.isAddress(metadata['address']):
+        elif not Web3.is_address(metadata['address']):
             errors.append('invalid address format')
-        elif not Web3.isChecksumAddress(metadata['address']):
+        elif not Web3.is_checksum_address(metadata['address']):
             errors.append('address is not checksummed')
 
         return errors

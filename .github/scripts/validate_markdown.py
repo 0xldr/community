@@ -1,6 +1,6 @@
 import os
 from github import Github
-from frontmatter import Frontmatter as fm
+import frontmatter
 from web3 import Web3
 
 # Environment variables
@@ -17,8 +17,8 @@ pr = repo.get_pull(PR_NUMBER)
 def validate_markdown(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
-        post = fm.parse(content)
-        metadata, markdown = post['attributes'], post['body']
+        post = frontmatter.loads(content)
+        metadata, markdown = post.metadata, post.content
 
         errors = []
         if 'title' not in metadata:

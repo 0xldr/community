@@ -6,7 +6,10 @@ from web3 import Web3
 # Environment variables
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 REPO_NAME = os.getenv('GITHUB_REPOSITORY')
-PR_NUMBER = os.getenv('PR_NUMBER')
+PR_NUMBER_STR = os.getenv('PR_NUMBER')
+
+# Convert PR_NUMBER from string to integer
+PR_NUMBER = int(PR_NUMBER_STR)
 
 # Initialize GitHub client
 g = Github(GITHUB_TOKEN)

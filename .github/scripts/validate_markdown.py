@@ -32,10 +32,12 @@ def validate_markdown(file_path):
             errors.append('missing date')
         if 'address' not in metadata:
             errors.append('missing mainnet address')
-        elif not Web3.is_address(metadata['address']):
-            errors.append('invalid address format')
-        elif not Web3.is_checksum_address(metadata['address']):
-            errors.append('address is not checksummed')
+        elif metadata['address'] != "$spell_address":  # Check if it's not the placeholder
+            if not Web3.is_address(metadata['address']):
+                errors.append('invalid address format')
+            elif not Web3.is_checksum_address(metadata['address']):
+                errors.append('address is not checksummed')
+        # Note: If the address is "$spell_address", it's considered a valid placeholder and skipped
 
         return errors
 
